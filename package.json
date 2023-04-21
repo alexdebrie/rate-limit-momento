@@ -1,0 +1,19 @@
+{
+  "name": "rate-limit-momento",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "A rate limiting library using the Momento Cache",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Alex DeBrie",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@gomomento/sdk": "^1.8.3",
+    "babel-jest": "^29.5.0",
+    "jest": "^29.5.0"
+  }
+}
