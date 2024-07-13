@@ -39,7 +39,7 @@ For another great, _serverless_ rate limiting library, check out [Upstash's](htt
 2. Install the library
 
     ```bash
-    npm i rate-limit-momento
+    npm i alexdebrie/rate-limit-momento
     ```
 
 3. Add to your application
@@ -111,7 +111,7 @@ The `FixedWindowRateLimiter` limits the rate of requests from a client within a 
 Sample usage:
 
 ```javascript
-import FixedWindowRateLimiter from 'rate-limit-momento';
+import { FixedWindowRateLimiter } from 'rate-limit-momento';
 
 const rateLimiter = new FixedWindowRateLimiter({
   keyPrefix: 'myapp',
@@ -152,7 +152,7 @@ In contrast to the fixed window limiter, a sliding rate limiter expires requests
 Sample usage:
 
 ```javascript
-import SlidingWindowRateLimiter from 'rate-limit-momento';
+import { SlidingWindowRateLimiter } from 'rate-limit-momento';
 
 const rateLimiter = new SlidingWindowRateLimiter({
   keyPrefix: 'myapp',
@@ -194,7 +194,7 @@ The `TokenBucketRateLimiter` limits the rate of requests from a client by tracki
 Sample usage:
 
 ```javascript
-import TokenBucketRateLimiter from 'rate-limit-momento';
+import { TokenBucketRateLimiter } from 'rate-limit-momento';
 
 const rateLimiter = new TokenBucketRateLimiter({
   keyPrefix: 'myapp',
